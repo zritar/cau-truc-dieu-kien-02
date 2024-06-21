@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+    <script>
+        let edge1 = +prompt("Nhap canh a cua tam giac");
+        let edge2 = +prompt("Nhap canh b cua tam giac");
+        let edge3 = +prompt("Nhap canh c cua tam giac");
+        if ( edge1 >0 && edge2>0 && edge3>0){
+            if ((edge1+edge2) > edge3){
+                if ((edge1+edge3) > edge2){
+                    if((edge2+edge3) > edge1){
+                        document.write("Day la 3 canh cua 1 tam giac");
+                    } else{
+                        document.write("Day khong la 3 canh cua 1 tam giac");
+                    }
+                } else{
+                    document.write("Day khong la 3 canh cua 1 tam giac");
+                }
+            } else {
+                document.write("Day khong la 3 canh cua 1 tam giac");
+            }
+        } else {
+            document.write("Day khong la 3 canh cua 1 tam giac");
+        }
+    </script>
+</body>
+</html>
